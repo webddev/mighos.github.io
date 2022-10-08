@@ -1,0 +1,128 @@
+header {
+  color: $grey;
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0 34px 0;
+    .left-block {
+      display: flex;
+      align-items: baseline;
+      & > div:not(:last-child) {
+        margin-right: 40px;
+      }
+      .location {
+        position: relative;
+        cursor: pointer;
+        padding-left: 16px;
+        &::before {
+          content: "";
+          width: 18px;
+          height: 18px;
+          background-image: url(../img/location.svg);
+          background-repeat: no-repeat;
+          position: absolute;
+          left: -7px;
+          top: -1px;
+        }
+      }
+      #language {
+        position: relative;
+        &::before {
+          content: "";
+          width: 18px;
+          height: 18px;
+          background-image: url(../img/United-states_flag_icon.svg);
+          background-repeat: no-repeat;
+          position: absolute;
+          left: -7px;
+          top: -1px;
+        }
+      }
+    }
+    .right-block {
+      display: flex;
+      align-items: baseline;
+      & > a:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+  }
+  .header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      font-family: "Holtwood One SC", sans-serif;
+      font-size: 32px;
+      color: $blue;
+    }
+    .catalog-btn {
+      position: relative;
+      color: $white;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 14px 11px 42px;
+      background: $blue;
+      border-radius: 8px;
+      cursor: pointer;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 12px;
+        background-image: url(../img/catalog-icon.svg);
+        background-repeat: no-repeat;
+        left: 13px;
+        top: 15px;
+      }
+    }
+    .search-form {
+      display: flex;
+      background: $blue;
+      border-radius: 8px;
+      padding: 2px;
+      #search-form {
+        background: $white;
+        width: 567px;
+        border-radius: 8px;
+        padding: 11px;
+        #category {
+          width: 23%;
+          margin-right: 18px;
+        }
+        #search-text {
+          width: 65%;
+          border-left: 1px solid $placeholder;
+          padding-left: 18px;
+          padding-right: 0;
+          &::placeholder {
+            color: $placeholder;
+          }
+        }
+      }
+      .search-btn {
+        width: 8%;
+        padding: 0;
+        cursor: pointer;
+      }
+    }
+    .client-section {
+      display: flex;
+      .client-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        &:not(:last-of-type) {
+          margin-right: 24px;
+        }
+        span {
+          font-weight: 500;
+        }
+        img {
+          margin-bottom: 3px;
+        }
+      }
+    }
+  }
+}

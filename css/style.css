@@ -1,0 +1,375 @@
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/NotoSans-Bold.eot");
+  src: local("Noto Sans Bold"), local("NotoSans-Bold"), url("../fonts/NotoSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSans-Bold.woff2") format("woff2"), url("../fonts/NotoSans-Bold.woff") format("woff"), url("../fonts/NotoSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/noto-sans-display-medium.eot");
+  src: local("Noto Sans"), local("NotoSans"), url("../fonts/noto-sans-display-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/noto-sans-display-medium.woff2") format("woff2"), url("../fonts/noto-sans-display-medium.woff") format("woff"), url("../fonts/FontsFree-Net-NotoSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/NotoSans.eot");
+  src: local("Noto Sans"), local("NotoSans"), url("../fonts/NotoSans.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSans.woff2") format("woff2"), url("../fonts/NotoSans.woff") format("woff"), url("../fonts/NotoSans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Holtwood One SC";
+  src: url("../fonts/HoltwoodOneSC.eot");
+  src: local("Holtwood One SC"), local("HoltwoodOneSC"), url("../fonts/HoltwoodOneSC.eot?#iefix") format("embedded-opentype"), url("../fonts/HoltwoodOneSC.woff2") format("woff2"), url("../fonts/HoltwoodOneSC.woff") format("woff"), url("../fonts/HoltwoodOneSC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/noto-sans-display-black.eot");
+  src: local("Noto Sans"), local("NotoSans"), url("../fonts/noto-sans-display-black.eot?#iefix") format("embedded-opentype"), url("../fonts/noto-sans-display-black.woff2") format("woff2"), url("../fonts/noto-sans-display-black.woff") format("woff"), url("../fonts/noto-sans-display-black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/noto-sans-display-semibold.eot");
+  src: local("Noto Sans"), local("NotoSans"), url("../fonts/noto-sans-display-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/noto-sans-display-semibold.woff2") format("woff2"), url("../fonts/noto-sans-display-semibold.woff") format("woff"), url("../fonts/noto-sans-display-semibold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+html {
+  font-family: "Noto Sans", sans-serif;
+  color: #181818;
+  font-size: 14px;
+}
+
+select {
+  border: none;
+  color: #707f8d;
+  background: none;
+  cursor: pointer;
+}
+select:focus-visible {
+  outline: none;
+}
+
+option[default] {
+  display: none;
+}
+
+input {
+  border: none;
+}
+input:focus-visible {
+  outline: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #707f8d;
+}
+
+.container {
+  margin: 0 auto;
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1290px;
+  }
+}
+
+.add-btn {
+  font-weight: bold;
+  color: #fff;
+  font-size: 14px;
+  padding: 9px 17px;
+  background: #257ac9;
+  border-radius: 8px;
+}
+
+header {
+  color: #707f8d;
+}
+header .header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 14px 0 34px 0;
+}
+header .header-top .left-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+header .header-top .left-block > div:not(:last-child) {
+  margin-right: 40px;
+}
+header .header-top .left-block .location {
+  position: relative;
+  cursor: pointer;
+  padding-left: 16px;
+}
+header .header-top .left-block .location::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/location.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -7px;
+  top: -1px;
+}
+header .header-top .left-block #language {
+  position: relative;
+}
+header .header-top .left-block #language::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/United-states_flag_icon.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -7px;
+  top: -1px;
+}
+header .header-top .right-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+header .header-top .right-block > a:not(:last-child) {
+  margin-right: 40px;
+}
+header .header-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .header-bottom .logo {
+  font-family: "Holtwood One SC", sans-serif;
+  font-size: 32px;
+  color: #257ac9;
+}
+header .header-bottom .catalog-btn {
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 14px 11px 42px;
+  background: #257ac9;
+  border-radius: 8px;
+  cursor: pointer;
+}
+header .header-bottom .catalog-btn::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 12px;
+  background-image: url(../img/catalog-icon.svg);
+  background-repeat: no-repeat;
+  left: 13px;
+  top: 15px;
+}
+header .header-bottom .search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #257ac9;
+  border-radius: 8px;
+  padding: 2px;
+}
+header .header-bottom .search-form #search-form {
+  background: #fff;
+  width: 567px;
+  border-radius: 8px;
+  padding: 11px;
+}
+header .header-bottom .search-form #search-form #category {
+  width: 23%;
+  margin-right: 18px;
+}
+header .header-bottom .search-form #search-form #search-text {
+  width: 65%;
+  border-left: 1px solid #b5c0ca;
+  padding-left: 18px;
+  padding-right: 0;
+}
+header .header-bottom .search-form #search-form #search-text::-webkit-input-placeholder {
+  color: #b5c0ca;
+}
+header .header-bottom .search-form #search-form #search-text::-moz-placeholder {
+  color: #b5c0ca;
+}
+header .header-bottom .search-form #search-form #search-text:-ms-input-placeholder {
+  color: #b5c0ca;
+}
+header .header-bottom .search-form #search-form #search-text::-ms-input-placeholder {
+  color: #b5c0ca;
+}
+header .header-bottom .search-form #search-form #search-text::placeholder {
+  color: #b5c0ca;
+}
+header .header-bottom .search-form .search-btn {
+  width: 8%;
+  padding: 0;
+  cursor: pointer;
+}
+header .header-bottom .client-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .header-bottom .client-section .client-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+header .header-bottom .client-section .client-item:not(:last-of-type) {
+  margin-right: 24px;
+}
+header .header-bottom .client-section .client-item span {
+  font-weight: 500;
+}
+header .header-bottom .client-section .client-item img {
+  margin-bottom: 3px;
+}
+
+.slider {
+  margin-top: 57px;
+}
+.slider .percent {
+  color: #f6b712;
+  font-size: 121px;
+  font-weight: 900;
+  margin-right: 27px;
+}
+.slider .slide-text {
+  font-size: 64px;
+  font-weight: bold;
+  color: #fff;
+}
+.slider .slide-prodname {
+  font-weight: bold;
+  font-size: 24px;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.slider .buy-btn {
+  color: #181818;
+  background: #fff;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 13px 39px;
+}
+.slider .slide-1 {
+  background-image: url(../img/slide-1-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 73px 0 116px 74px;
+}
+.slider .pagination {
+  text-align: center;
+  margin-top: 10px;
+}
+.slider .pagination .pagination-item:not(:last-of-type) {
+  margin-right: 5px;
+}
+.slider .pagination .pagination-item.active circle {
+  fill: #257ac9;
+  fill-opacity: 1;
+}
+
+.week-sale {
+  margin-top: 60px;
+}
+.week-sale h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+.week-sale .week-sale-body {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 18px;
+}
+.week-sale .week-sale-body .week-sale-item .week-sale-img {
+  position: relative;
+}
+.week-sale .week-sale-body .week-sale-item .week-sale-img .week-sale-imgsale {
+  position: absolute;
+  left: 6px;
+  bottom: 11px;
+  color: #fff;
+  font-weight: 700;
+  background: #579b13;
+  border-radius: 111px;
+  padding: 2px 4px;
+}
+.week-sale .week-sale-body .week-sale-item .week-sale-info .week-sale-price {
+  font-size: 18px;
+  color: #257ac9;
+  font-weight: bold;
+}
+.week-sale .week-sale-body .week-sale-item .week-sale-info .week-sale-prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.week-sale .week-sale-body .week-sale-item .week-sale-info .week-sale-prices .fav .fav-icon {
+  cursor: pointer;
+}
+.week-sale .week-sale-body .week-sale-item .week-sale-info .week-sale-prices .fav .fav-icon.active {
+  fill: #257ac9;
+}
+.week-sale .week-sale-body .week-sale-item .week-sale-info .week-sale-prices .fav .fav-icon.active path {
+  stroke: #257ac9;
+}
+.week-sale .week-sale-body .week-sale-item .week-sale-info .week-sale-oldprice {
+  font-size: 11px;
+  font-weight: 500;
+  color: #579b13;
+  text-decoration: line-through;
+}
+.week-sale .week-sale-body .week-sale-item .week-sale-info .week-sale-prodname {
+  color: #707f8d;
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */

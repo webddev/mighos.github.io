@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <title>Mighos</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-top">
+          <div class="left-block">
+            <div class="location">Los Angeles</div>
+            <div class="currency">
+              <select name="Currency" id="currency">
+                <option value="usd">USD</option>
+                <option value="rub">RUB</option>
+              </select>
+            </div>
+            <div class="lang">
+              <select name="Language" id="language">
+                <option value="eng">English</option>
+                <option value="rus">Russian</option>
+              </select>
+            </div>
+          </div>
+          <div class="right-block">
+            <a href="#">Помощь</a>
+            <a href="#">Пункты выдачи</a>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="logo">Mighos</div>
+          <div class="catalog-btn">Каталог</div>
+          <div class="search-form">
+            <form action="" id="search-form">
+              <select name="Category" id="category">
+                <option value="" default disabled selected>
+                  Все категории
+                </option>
+                <option value="cat1">Категория 1</option>
+                <option value="cat2">Категория 2</option>
+              </select>
+              <input
+                type="text"
+                name="Search-text"
+                id="search-text"
+                placeholder="Искать на Mighos"
+              />
+            </form>
+            <button form="search-form" type="submit" class="search-btn">
+              <img src="img/search-normal.svg" width="20" height="20" />
+            </button>
+          </div>
+          <div class="client-section">
+            <div class="client-item">
+              <img src="img/profile-circle.svg" width="24" height="24px" />
+              <span>Войти</span>
+            </div>
+            <div class="client-item">
+              <img src="img/heart.svg" width="24" height="24px" />
+              <span>Избранное</span>
+            </div>
+            <div class="client-item">
+              <img src="img/box.svg" width="24" height="24px" />
+              <span>Заказы</span>
+            </div>
+            <div class="client-item">
+              <img src="img/bag.svg" width="24" height="24px" />
+              <span>Корзина</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="slider">
+          <div class="slide-1">
+            <div class="slide-info">
+              <span class="percent">30%</span>
+              <span class="slide-text">Скидка</span>
+              <p class="slide-prodname">Ноутбук Ideapad GAMING</p>
+              <button class="buy-btn">Купить</button>
+            </div>
+          </div>
+          <div class="pagination">
+            <svg
+              width="8"
+              height="8"
+              viewBox="0 0 8 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="pagination-item"
+            >
+              <circle cx="4" cy="4" r="4" fill="#707F8D" fill-opacity="0.25" />
+            </svg>
+            <svg
+              width="8"
+              height="8"
+              viewBox="0 0 8 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="pagination-item active"
+            >
+              <circle cx="4" cy="4" r="4" fill="#707F8D" fill-opacity="0.25" />
+            </svg>
+            <svg
+              width="8"
+              height="8"
+              viewBox="0 0 8 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="pagination-item"
+            >
+              <circle cx="4" cy="4" r="4" fill="#707F8D" fill-opacity="0.25" />
+            </svg>
+            <svg
+              width="8"
+              height="8"
+              viewBox="0 0 8 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="pagination-item"
+            >
+              <circle cx="4" cy="4" r="4" fill="#707F8D" fill-opacity="0.25" />
+            </svg>
+            <svg
+              width="8"
+              height="8"
+              viewBox="0 0 8 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="pagination-item"
+            >
+              <circle cx="4" cy="4" r="4" fill="#707F8D" fill-opacity="0.25" />
+            </svg>
+          </div>
+        </div>
+        <section class="week-sale">
+          <div class="container">
+            <h2>Большие скидки в эту неделю</h2>
+            <div class="week-sale-body">
+              <div class="week-sale-item">
+                <div class="week-sale-img">
+                  <img src="img/hartens.png" alt="Фото товара" />
+                  <span class="week-sale-imgsale">-15%</span>
+                </div>
+                <div class="week-sale-info">
+                  <div class="week-sale-prices">
+                    <div>
+                      <span class="week-sale-price">3 124 ₽</span>
+                      <span class="week-sale-oldprice">7 313 ₽</span>
+                    </div>
+                    <div class="fav">
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fav-icon"
+                      >
+                        <path
+                          d="M12.62 20.8552C12.28 20.9726 11.72 20.9726 11.38 20.8552C8.48 19.8865 2 15.8454 2 8.9961C2 5.97261 4.49 3.52643 7.56 3.52643C9.38 3.52643 10.99 4.38749 12 5.71821C13.01 4.38749 14.63 3.52643 16.44 3.52643C19.51 3.52643 22 5.97261 22 8.9961C22 15.8454 15.52 19.8865 12.62 20.8552Z"
+                          stroke="#707F8D"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="week-sale-prodname">
+                    Hartens Company / Выжималка Hartens
+                  </p>
+                </div>
+                <button class="add-btn">В корзину</button>
+              </div>
+              <div class="week-sale-item">
+                <div class="week-sale-img">
+                  <img src="img/hartens.png" alt="Фото товара" />
+                  <span class="week-sale-imgsale">-15%</span>
+                </div>
+                <div class="week-sale-info">
+                  <div class="week-sale-prices">
+                    <div>
+                      <span class="week-sale-price">3 124 ₽</span>
+                      <span class="week-sale-oldprice">7 313 ₽</span>
+                    </div>
+                    <div class="fav">
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fav-icon active"
+                      >
+                        <path
+                          d="M12.62 20.8552C12.28 20.9726 11.72 20.9726 11.38 20.8552C8.48 19.8865 2 15.8454 2 8.9961C2 5.97261 4.49 3.52643 7.56 3.52643C9.38 3.52643 10.99 4.38749 12 5.71821C13.01 4.38749 14.63 3.52643 16.44 3.52643C19.51 3.52643 22 5.97261 22 8.9961C22 15.8454 15.52 19.8865 12.62 20.8552Z"
+                          stroke="#707F8D"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="week-sale-prodname">
+                    Hartens Company / Выжималка Hartens
+                  </p>
+                </div>
+                <button class="add-btn">В корзину</button>
+              </div>
+              <div class="week-sale-item">
+                <div class="week-sale-img">
+                  <img src="img/hartens.png" alt="Фото товара" />
+                  <span class="week-sale-imgsale">-15%</span>
+                </div>
+                <div class="week-sale-info">
+                  <div class="week-sale-prices">
+                    <div>
+                      <span class="week-sale-price">3 124 ₽</span>
+                      <span class="week-sale-oldprice">7 313 ₽</span>
+                    </div>
+                    <div class="fav">
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fav-icon"
+                      >
+                        <path
+                          d="M12.62 20.8552C12.28 20.9726 11.72 20.9726 11.38 20.8552C8.48 19.8865 2 15.8454 2 8.9961C2 5.97261 4.49 3.52643 7.56 3.52643C9.38 3.52643 10.99 4.38749 12 5.71821C13.01 4.38749 14.63 3.52643 16.44 3.52643C19.51 3.52643 22 5.97261 22 8.9961C22 15.8454 15.52 19.8865 12.62 20.8552Z"
+                          stroke="#707F8D"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="week-sale-prodname">
+                    Hartens Company / Выжималка Hartens
+                  </p>
+                </div>
+                <button class="add-btn">В корзину</button>
+              </div>
+              <div class="week-sale-item">
+                <div class="week-sale-img">
+                  <img src="img/hartens.png" alt="Фото товара" />
+                  <span class="week-sale-imgsale">-15%</span>
+                </div>
+                <div class="week-sale-info">
+                  <div class="week-sale-prices">
+                    <div>
+                      <span class="week-sale-price">3 124 ₽</span>
+                      <span class="week-sale-oldprice">7 313 ₽</span>
+                    </div>
+                    <div class="fav">
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fav-icon"
+                      >
+                        <path
+                          d="M12.62 20.8552C12.28 20.9726 11.72 20.9726 11.38 20.8552C8.48 19.8865 2 15.8454 2 8.9961C2 5.97261 4.49 3.52643 7.56 3.52643C9.38 3.52643 10.99 4.38749 12 5.71821C13.01 4.38749 14.63 3.52643 16.44 3.52643C19.51 3.52643 22 5.97261 22 8.9961C22 15.8454 15.52 19.8865 12.62 20.8552Z"
+                          stroke="#707F8D"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="week-sale-prodname">
+                    Hartens Company / Выжималка Hartens
+                  </p>
+                </div>
+                <button class="add-btn">В корзину</button>
+              </div>
+              <div class="week-sale-item">
+                <div class="week-sale-img">
+                  <img src="img/hartens.png" alt="Фото товара" />
+                  <span class="week-sale-imgsale">-15%</span>
+                </div>
+                <div class="week-sale-info">
+                  <div class="week-sale-prices">
+                    <div>
+                      <span class="week-sale-price">3 124 ₽</span>
+                      <span class="week-sale-oldprice">7 313 ₽</span>
+                    </div>
+                    <div class="fav">
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fav-icon"
+                      >
+                        <path
+                          d="M12.62 20.8552C12.28 20.9726 11.72 20.9726 11.38 20.8552C8.48 19.8865 2 15.8454 2 8.9961C2 5.97261 4.49 3.52643 7.56 3.52643C9.38 3.52643 10.99 4.38749 12 5.71821C13.01 4.38749 14.63 3.52643 16.44 3.52643C19.51 3.52643 22 5.97261 22 8.9961C22 15.8454 15.52 19.8865 12.62 20.8552Z"
+                          stroke="#707F8D"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="week-sale-prodname">
+                    Hartens Company / Выжималка Hartens
+                  </p>
+                </div>
+                <button class="add-btn">В корзину</button>
+              </div>
+              <div class="week-sale-item">
+                <div class="week-sale-img">
+                  <img src="img/hartens.png" alt="Фото товара" />
+                  <span class="week-sale-imgsale">-15%</span>
+                </div>
+                <div class="week-sale-info">
+                  <div class="week-sale-prices">
+                    <div>
+                      <span class="week-sale-price">3 124 ₽</span>
+                      <span class="week-sale-oldprice">7 313 ₽</span>
+                    </div>
+                    <div class="fav">
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fav-icon"
+                      >
+                        <path
+                          d="M12.62 20.8552C12.28 20.9726 11.72 20.9726 11.38 20.8552C8.48 19.8865 2 15.8454 2 8.9961C2 5.97261 4.49 3.52643 7.56 3.52643C9.38 3.52643 10.99 4.38749 12 5.71821C13.01 4.38749 14.63 3.52643 16.44 3.52643C19.51 3.52643 22 5.97261 22 8.9961C22 15.8454 15.52 19.8865 12.62 20.8552Z"
+                          stroke="#707F8D"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="week-sale-prodname">
+                    Hartens Company / Выжималка Hartens
+                  </p>
+                </div>
+                <button class="add-btn">В корзину</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

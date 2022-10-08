@@ -1,0 +1,55 @@
+$grey: #707f8d;
+$black: #181818;
+$green: #579b13;
+$blue: #257ac9;
+$beige: #fae1d0;
+$placeholder: #b5c0ca;
+$white-grey: #f2f2f2;
+$white: #fff;
+$yellow: #f6b712;
+html {
+  font-family: "Noto Sans", sans-serif;
+  color: $black;
+  font-size: 14px;
+}
+select {
+  border: none;
+  color: $grey;
+  background: none;
+  cursor: pointer;
+  &:focus-visible {
+    outline: none;
+  }
+}
+option[default] {
+  display: none;
+}
+input {
+  border: none;
+  &:focus-visible {
+    outline: none;
+  }
+}
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: $grey;
+}
+.container {
+  margin: 0 auto;
+  @media screen and (min-width: 1400px) {
+    max-width: 1290px;
+  }
+}
+.add-btn {
+  font-weight: bold;
+  color: $white;
+  font-size: 14px;
+  padding: 9px 17px;
+  background: $blue;
+  border-radius: 8px;
+}

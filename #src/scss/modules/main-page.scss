@@ -1,0 +1,109 @@
+.slider {
+  margin-top: 57px;
+  .percent {
+    color: $yellow;
+    font-size: 121px;
+    font-weight: 900;
+    margin-right: 27px;
+  }
+  .slide-text {
+    font-size: 64px;
+    font-weight: bold;
+    color: $white;
+  }
+  .slide-prodname {
+    font-weight: bold;
+    font-size: 24px;
+    color: $white;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .buy-btn {
+    color: $black;
+    background: $white;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 13px 39px;
+  }
+  .slide-1 {
+    background-image: url(../img/slide-1-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 73px 0 116px 74px;
+  }
+  .pagination {
+    text-align: center;
+    margin-top: 10px;
+    .pagination-item:not(:last-of-type) {
+      margin-right: 5px;
+    }
+    .pagination-item.active {
+      circle {
+        fill: $blue;
+        fill-opacity: 1;
+      }
+    }
+  }
+}
+
+.week-sale {
+  margin-top: 60px;
+  h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 32px;
+  }
+  .week-sale-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    gap: 18px;
+    .week-sale-item {
+      .week-sale-img {
+        position: relative;
+        .week-sale-imgsale {
+          position: absolute;
+          left: 6px;
+          bottom: 11px;
+          color: $white;
+          font-weight: 700;
+          background: $green;
+          border-radius: 111px;
+          padding: 2px 4px;
+        }
+      }
+      .week-sale-info {
+        .week-sale-price {
+          font-size: 18px;
+          color: $blue;
+          font-weight: bold;
+        }
+        .week-sale-prices {
+          display: flex;
+          justify-content: space-between;
+          .fav {
+            .fav-icon {
+              cursor: pointer;
+            }
+            .fav-icon.active {
+              fill: $blue;
+              path {
+                stroke: $blue;
+              }
+            }
+          }
+        }
+        .week-sale-oldprice {
+          font-size: 11px;
+          font-weight: 500;
+          color: $green;
+          text-decoration: line-through;
+        }
+        .week-sale-prodname {
+          color: $grey;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
