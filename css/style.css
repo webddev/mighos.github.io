@@ -191,18 +191,19 @@ header .header-top .left-block .location::before {
   left: -7px;
   top: -1px;
 }
-header .header-top .left-block #language {
+header .header-top .left-block .lang {
   position: relative;
+  padding-left: 5px;
 }
-header .header-top .left-block #language::before {
+header .header-top .left-block .lang::before {
   content: "";
   width: 18px;
   height: 18px;
   background-image: url(../img/United-states_flag_icon.svg);
   background-repeat: no-repeat;
   position: absolute;
-  left: -7px;
-  top: -1px;
+  left: -13px;
+  top: 2px;
 }
 header .header-top .right-block {
   display: -webkit-box;
