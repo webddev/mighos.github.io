@@ -39,11 +39,38 @@ a {
   text-decoration: none;
   color: $grey;
 }
+img {
+  width: 100%;
+  max-width: 100%;
+}
 .container {
   margin: 0 auto;
+  @media screen and (min-width: 1px) {
+    max-width: 100%;
+  }
+  @media screen and (min-width: 576px) {
+    max-width: 540px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media screen and (min-width: 992px) {
+    max-width: 960px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1140px;
+  }
   @media screen and (min-width: 1400px) {
     max-width: 1290px;
   }
+  @media screen and (min-width: 1600px) {
+    max-width: 1440px;
+  }
+}
+.logo {
+  font-family: "Holtwood One SC", sans-serif;
+  font-size: 32px;
+  color: $blue;
 }
 .add-btn {
   font-weight: bold;
@@ -52,4 +79,9 @@ a {
   padding: 9px 17px;
   background: $blue;
   border-radius: 8px;
+  transition: all 0.4s;
+  &:hover {
+    transition: all 0.4s;
+    background: $green;
+  }
 }
