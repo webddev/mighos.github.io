@@ -364,6 +364,12 @@ header .header-bottom .client-section .client-item img {
   margin-top: 30px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 1199px) {
+  .slider .slide-prodname {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+}
 .slider .buy-btn {
   color: #181818;
   background: #fff;
@@ -382,17 +388,23 @@ header .header-bottom .client-section .client-item img {
 .slider .slide {
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 73px 0 116px 74px;
+  height: 407px;
+  padding: 73px 0 0 74px;
 }
 @media screen and (min-width: 1600px) {
   .slider .slide {
     background-size: cover;
-    padding: 73px 0 170px 74px;
+    height: 463px;
   }
 }
 @media screen and (max-width: 1399px) {
   .slider .slide {
-    padding: 73px 0 65px 74px;
+    height: 352px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .slider .slide {
+    height: 285px;
   }
 }
 .slider .slide-1 {
