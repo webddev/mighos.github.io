@@ -12,11 +12,13 @@ footer {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    text-align: center;
     p {
       color: $black;
       font-size: 16px;
       font-weight: 500;
       margin-bottom: 16px;
+      margin-top: 0;
     }
     a {
       display: block;
@@ -29,21 +31,42 @@ footer {
   }
   .footer-row {
     display: flex;
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+      align-items: center;
+    }
     .left-block {
       max-width: 190px;
       margin-right: 180px;
+      @media screen and (max-width: 1199px) {
+        margin-right: 50px;
+      }
+      @media screen and (max-width: 992px) {
+        margin-right: 0;
+        max-width: fit-content;
+        text-align: center;
+      }
       p {
         font-weight: 500;
         font-size: 16px;
+        margin-bottom: 0;
       }
     }
     .center-block {
       margin-right: 120px;
-    }
-    .right-block {
+      @media screen and (max-width: 1199px) {
+        margin-right: 100px;
+      }
+      @media screen and (max-width: 992px) {
+        margin: 25px 0;
+      }
     }
     .media-block {
       margin-left: auto;
+      @media screen and (max-width: 992px) {
+        margin-left: 0;
+        margin-top: 50px;
+      }
       a {
         &:not(:last-child) {
           margin-right: 44px;

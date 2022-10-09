@@ -1,15 +1,43 @@
 .slider {
   margin-top: 57px;
+  @media screen and (max-width: 1199px) {
+    margin-top: 25px;
+  }
+  @media screen and (max-width: 460px) {
+    margin-top: 15px;
+  }
   .percent {
     color: $yellow;
     font-size: 121px;
     font-weight: 900;
     margin-right: 27px;
+    @media screen and (max-width: 1199px) {
+      font-size: 90px;
+    }
+    @media screen and (max-width: 991px) {
+      font-size: 70px;
+      margin-right: 5px;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 35px;
+    }
   }
   .slide-text {
     font-size: 64px;
     font-weight: bold;
     color: $white;
+    @media screen and (max-width: 1199px) {
+      font-size: 55px;
+    }
+    @media screen and (max-width: 991px) {
+      font-size: 45px;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 35px;
+    }
+    @media screen and (max-width: 460px) {
+      font-size: 27px;
+    }
   }
   .slide-prodname {
     font-weight: bold;
@@ -18,8 +46,23 @@
     margin-top: 30px;
     margin-bottom: 50px;
     @media screen and (max-width: 1199px) {
+      font-size: 20px;
       margin-top: 10px;
       margin-bottom: 30px;
+    }
+    @media screen and (max-width: 991px) {
+      font-size: 18px;
+      margin-top: 10px;
+      margin-bottom: 23px;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 15px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+    @media screen and (max-width: 460px) {
+      margin-top: 6px;
+      font-size: 14px;
     }
   }
   .buy-btn {
@@ -34,21 +77,46 @@
       transition: all 0.4s;
       color: $blue;
     }
+    @media screen and (max-width: 991px) {
+      font-size: 14px;
+      padding: 11px 35px;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 13px;
+      padding: 9px 29px;
+    }
+    @media screen and (max-width: 460px) {
+      padding: 7px 24px;
+    }
   }
   .slide {
     background-repeat: no-repeat;
     background-size: contain;
     height: 407px;
     padding: 73px 0 0 74px;
-    @media screen and (min-width: 1600px) {
-      background-size: cover;
-      height: 463px;
-    }
     @media screen and (max-width: 1399px) {
       height: 352px;
     }
     @media screen and (max-width: 1199px) {
       height: 285px;
+    }
+    @media screen and (max-width: 991px) {
+      padding: 30px 0 0 35px;
+      height: 240px;
+    }
+    @media screen and (max-width: 767px) {
+      height: 172px;
+      padding: 27px 0 0 25px;
+    }
+    @media screen and (max-width: 525px) {
+      height: 157px;
+      padding: 23px 0 0 20px;
+    }
+    @media screen and (max-width: 440px) {
+      height: 141px;
+    }
+    @media screen and (max-width: 420px) {
+      height: 123px;
     }
   }
   .slide-1 {
@@ -74,20 +142,41 @@
 
 .week-sale {
   margin-top: 60px;
+  @media screen and (max-width: 575px) {
+    margin-top: 30px;
+  }
+  @media screen and (max-width: 461px) {
+    margin-top: 10px;
+  }
   .week-sale-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 767px) {
+      align-items: baseline;
+    }
+    @media screen and (max-width: 575px) {
+      flex-wrap: wrap;
+    }
     h2 {
       font-size: 22px;
       font-weight: bold;
       margin-bottom: 32px;
+      @media screen and (max-width: 575px) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: 461px) {
+        margin-bottom: 15px;
+      }
     }
     .to-all-prod-link {
       font-weight: 500;
       position: relative;
       padding-right: 15px;
       transition: all 0.4s;
+      @media screen and (max-width: 461px) {
+        margin-bottom: 20px;
+      }
       &:hover {
         transition: all 0.4s;
         opacity: 0.6;
@@ -106,7 +195,7 @@
   }
   .week-sale-body {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
     row-gap: 30px;
     column-gap: 18px;
     .week-sale-item {
@@ -179,9 +268,12 @@
 }
 .banners-firstline {
   .banners-row {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     column-gap: 30px;
     margin: 60px 0;
+    @media screen and (max-width: 991px) {
+      row-gap: 30px;
+    }
   }
 }
 .banners-secondline {
@@ -189,13 +281,16 @@
     margin-bottom: 55px;
     gap: 30px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
 }
 .banners-thirdline {
   .banners-row {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     column-gap: 30px;
     margin-bottom: 90px;
+    @media screen and (max-width: 991px) {
+      row-gap: 30px;
+    }
   }
 }
