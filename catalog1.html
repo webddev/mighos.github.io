@@ -9,7 +9,7 @@
     <title>Catalog 1 - Mighos</title>
   </head>
   <body>
-    <header>
+    <header class="catalog-header">
       <div class="container">
         <div class="header-top">
           <div class="left-block">
@@ -70,7 +70,7 @@
     </header>
     <main>
       <div class="container">
-        <div class="breadcrumbs">
+        <div class="breadcrumbs catalog-breadcrumbs">
           <ul>
             <li class="stage"><a href="#"> Обувь </a></li>
             <li class="stage"><a href="#"> Женская обувь </a></li>
@@ -78,51 +78,85 @@
           </ul>
         </div>
         <section class="catalog1">
-          <div class="catalog-title-row">
-            <h1 class="catalog-title">Босоножки женские</h1>
-            <span class="quantity-prod">2223 товара</span>
+          <div class="filter-panel">
+            <div class="category">
+              <h3>Категория</h3>
+              <input type="checkbox" name="Аквасоки1" value="a1" />
+              <span class="category-name">Аквасоки</span>
+              <span class="category-quantity">(301)</span> <br />
+              <input type="checkbox" name="Аквасоки2" value="a2" />
+              <span class="category-name">Аквасоки</span>
+              <span class="category-quantity">(301)</span> <br />
+              <input type="checkbox" name="Аквасоки3" value="a3" />
+              <span class="category-name">Аквасоки</span>
+              <span class="category-quantity">(301)</span> <br />
+              <input type="checkbox" name="Аквасоки4" value="a4" />
+              <span class="category-name">Аквасоки</span>
+              <span class="category-quantity">(301)</span> <br />
+              <input type="checkbox" name="Аквасоки5" value="a5" />
+              <span class="category-name">Аквасоки</span>
+              <span class="category-quantity">(301)</span> <br />
+            </div>
+            <div class="delivery">
+              <h3>Срок доставки</h3>
+              <input type="radio" name="1 day" value="d1" />
+              <span class="category-name">1 день</span>
+              <br />
+              <input type="radio" name="1 day" varadioue="d2" />
+              <span class="category-name">1 день</span>
+              <br />
+              <input type="radio" name="1 day" value="d3" />
+              <span class="category-name">1 день</span>
+              <br />
+              <input type="radio" name="1 day" value="d4" />
+              <span class="category-name">1 день</span>
+              <br />
+              <input type="radio" name="1 day" value="d5" />
+              <span class="category-name">1 день</span>
+              <br />
+            </div>
+            <div class="brand">
+              <h3>Бренд</h3>
+              <input type="checkbox" name="Аквасоки1" value="a1" />
+              <span class="category-name">Аквасоки</span>
+              <span class="category-quantity">(301)</span> <br />
+              <input type="checkbox" name="Аквасоки2" value="a2" />
+              <span class="category-name">Аквасоки</span>
+              <span class="category-quantity">(301)</span> <br />
+              <input type="checkbox" name="Аквасоки3" value="a3" />
+              <span class="category-name">Аквасоки</span>
+              <span class="category-quantity">(301)</span> <br />
+              <input type="checkbox" name="Аквасоки4" value="a4" />
+              <span class="category-name">Аквасоки</span>
+              <span class="category-quantity">(301)</span> <br />
+              <input type="checkbox" name="Аквасоки5" value="a5" />
+              <span class="category-name">Аквасоки</span>
+              <span class="category-quantity">(301)</span> <br />
+            </div>
           </div>
-          <div class="catalog-body">
-            <!-- <div class="filter-panel">
-                <div class="category">
-                  <h3>Категория</h3>
-                  <input type="checkbox" name="Аквасоки1" value="a1" />
-                  <span class="category-name">Аквасоки</span>
-                  <span class="category-quantity">(301)</span> <br />
-                  <input type="checkbox" name="Аквасоки2" value="a2" />
-                  <span class="category-name">Аквасоки</span>
-                  <span class="category-quantity">(301)</span> <br />
-                  <input type="checkbox" name="Аквасоки3" value="a3" />
-                  <span class="category-name">Аквасоки</span>
-                  <span class="category-quantity">(301)</span> <br />
-                  <input type="checkbox" name="Аквасоки4" value="a4" />
-                  <span class="category-name">Аквасоки</span>
-                  <span class="category-quantity">(301)</span> <br />
-                  <input type="checkbox" name="Аквасоки5" value="a5" />
-                  <span class="category-name">Аквасоки</span>
-                  <span class="category-quantity">(301)</span> <br />
-                </div>
-              </div> -->
-            <div class="catalog-content">
-              <div class="catalog-sort">
-                <ul>
-                  <span class="sort-to">Сортировать по:</span>
-                  <li class="sort-link sort-popul">Популярности</li>
-                  <li class="sort-link">Рейтингу</li>
-                  <li class="sort-link">Цене</li>
-                  <li class="sort-link">Скидке</li>
-                </ul>
-              </div>
-              <div class="fitres-chosen">
-                <div class="filter-item">Аквасоки</div>
-                <div class="filter-item">2 дня</div>
-              </div>
+          <div class="catalog-sortblock">
+            <div class="catalog-titleline">
+              <h1 class="catalog-title">Босоножки женские</h1>
+              <span class="quantity-prod">2223 товара</span>
+            </div>
+            <div class="catalog-sort">
+              <ul>
+                <span class="sort-to">Сортировать по:</span>
+                <li class="sort-link sort-popul">Популярности</li>
+                <li class="sort-link">Рейтингу</li>
+                <li class="sort-link">Цене</li>
+                <li class="sort-link">Скидке</li>
+              </ul>
+            </div>
+            <div class="fitres-chosen">
+              <div class="filter-item">Аквасоки</div>
+              <div class="filter-item">2 дня</div>
             </div>
           </div>
         </section>
       </div>
     </main>
-    <footer>
+    <!-- <footer>
       <div class="container">
         <div class="footer-row">
           <div class="left-block">
@@ -223,6 +257,6 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
